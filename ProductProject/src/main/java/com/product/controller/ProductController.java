@@ -21,11 +21,8 @@ import com.product.repository.ProductRepository;
 
 @Controller
 public class ProductController {
-
-	
 	@Autowired
 	private ProductRepository productRepository;
-	
 	
 	public static Logger logger=null;
 @GetMapping("/")
