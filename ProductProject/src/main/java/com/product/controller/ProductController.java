@@ -33,7 +33,6 @@ public class ProductController {
 	m.addAttribute("all_products", list);
 		return "index";
 	}
-
 @GetMapping("/save")
 public String saveForm() {
 	logger.info("Here we need to add products");
