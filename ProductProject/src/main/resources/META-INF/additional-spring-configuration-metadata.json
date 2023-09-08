@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "log4j.appender.file",
+    "type": "java.lang.String",
+    "description": "A description for 'log4j.appender.file'"
+  },
+  {
+    "name": "log4j.rootCatagory",
+    "type": "java.lang.String",
+    "description": "A description for 'log4j.rootCatagory'"
+  }
+]}
