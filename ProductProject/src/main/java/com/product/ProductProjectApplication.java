@@ -8,8 +8,6 @@ public class ProductProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProductProjectApplication.class, args);
-		System.out.println("I am good");
-		
+		System.out.println("I am good new");
 	}
-
 }
