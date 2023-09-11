@@ -50,11 +50,11 @@
 						<table class="table">
 							<thead>
 								<tr>
-									<th scope="col">ID</th>
-									<th scope="col">NAME</th>
-									<th scope="col">DESCRIPTION</th>
-									<th scope="col">PRICE</th>
-									<th scope="col">QUANTITY</th>
+									<th scope="col"><a th:href="@{'/page/'+${pageNo}+'?sortField=id&sortDir='+${revSortDir}}">ID</a></th>
+									<th scope="col"><a th:href="@{'/page/'+${pageNo}+'?sortField=productName&sortDir='+${revSortDir}}">NAME</a></th>
+									<th scope="col"><a th:href="@{'/page/'+${pageNo}+'?sortField=description&sortDir='+${revSortDir}}">DESCRIPTION</a></th>
+									<th scope="col"><a th:href="@{'/page/'+${pageNo}+'?sortField=price&sortDir='+${revSortDir}}">PRICE</a></th>
+									<th scope="col"><a th:href="@{'/page/'+${pageNo}+'?sortField=quantity&sortDir='+${revSortDir}}">QUANTITY</a></th>
 									<th scope="col">ACTION</th>
 								</tr>
 							</thead>
@@ -69,12 +69,39 @@
 										<a th:href="@{'/edit/'+${p.id}}" class="btn btn-sm btn-primary">EDIT</a>
 										<a th:href="@{'/delete/'+${p.id}}" class="btn btn-sm btn-danger">DELETE</a>
 									</td>
-
 								</tr>
 							</tbody>
 						</table>
 					</div>
+<div class="card-footer">
+	<div class="row">
+		<div class="col-md-6">
+				<p>Total Elements : [[${totalElements}]]</p>
+		</div>
+			<div class="col-md-6">
+				<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li th:classappend="${pageNo==0} ? 'disabled' : '' "class="page-item">
+		<a class="page-link" th:href="@{'/page/'+${pageNo-1}}">Previous</a>
+		</li>
+    
+    <li th:each="i : ${#numbers.sequence(1,totalPages)}" th:classappend="${pageNo+1==i}?'active':''" class="page-item">
+		<a class="page-link" th:href="@{'/page/'+${i-1}}+ '?sortField='+${sortField}+'&sortDir='+${sortDir}">[[${i}]]</a>
+		</li>
 
+    <li th:classappend="${pageNo+1==totalPages} ? 'disabled' : '' "class="page-item">
+      <a class="page-link" th:href="@{'/page/'+${pageNo+1}}">Next</a>
+      </li>
+  
+  </ul>
+</nav>
+			</div>
+		</div>
+	</div>
+	
+	<!--<p>Total Pages : [[${totalPages}]]</p>-->
+	<!--<p>Page No : [[${pageNo}]]</p>-->
+</div>
 				</div>
 			</div>
 		</div>
