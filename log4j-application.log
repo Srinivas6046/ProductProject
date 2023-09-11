@@ -1,0 +1,21 @@
+2023-09-11 09:02:05 INFO  ProductController:31 - It went to controller class
+2023-09-11 09:02:07 INFO  ProductController:38 - Here we need to add products
+2023-09-11 09:02:49 INFO  ProductController:53 - it will going to create products
+2023-09-11 09:02:49 INFO  ProductController:56 - product '11' added successfully
+2023-09-11 09:02:49 INFO  ProductController:38 - Here we need to add products
+2023-09-11 09:03:51 INFO  ProductController:53 - it will going to create products
+2023-09-11 09:03:51 INFO  ProductController:56 - product '12' added successfully
+2023-09-11 09:03:51 INFO  ProductController:38 - Here we need to add products
+2023-09-11 09:04:34 INFO  ProductController:53 - it will going to create products
+2023-09-11 09:04:34 INFO  ProductController:56 - product '13' added successfully
+2023-09-11 09:04:34 INFO  ProductController:38 - Here we need to add products
+2023-09-11 09:05:00 INFO  ProductController:53 - it will going to create products
+2023-09-11 09:05:00 INFO  ProductController:56 - product '14' added successfully
+2023-09-11 09:05:00 INFO  ProductController:38 - Here we need to add products
+2023-09-11 09:32:36 INFO  ProductController:38 - Here we need to add products
+2023-09-11 09:32:37 INFO  ProductController:38 - Here we need to add products
+2023-09-11 09:32:40 INFO  ProductController:31 - It went to controller class
+2023-09-11 09:32:44 INFO  ProductController:38 - Here we need to add products
+2023-09-11 09:33:23 INFO  ProductController:53 - it will going to create products
+2023-09-11 09:33:23 INFO  ProductController:56 - product '15' added successfully
+2023-09-11 09:33:23 INFO  ProductController:38 - Here we need to add products
